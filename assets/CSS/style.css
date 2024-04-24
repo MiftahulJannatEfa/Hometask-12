@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0; 
+    font-family: "Ubuntu", sans-serif;
+}
+ul,ol{
+   list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+h1,h2{
+    margin: 0;
+}
+:root {
+ --primary-color : #0f2f44;
+}
+header{
+    background-color: var(--primary-color);
+    color: antiquewhite;
+}
+header .container .row{
+    justify-content: space-between;
+}
+header .container span{
+    padding: 19px 0;
+    display: inline-block;
+    line-height: 0 ;
+}
+nav{
+    background-color: #ffff ;
+    height: 61px;
+}
+nav  .container{
+   width: 1170px;
+   margin: auto;
+}
+nav  .container .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 61px;
+    flex-wrap: wrap;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+ color: rgb(2, 2, 2);
+ font-family: "Open Sans", sans-serif;
+ font-weight: 800;
+ padding: 0 25px;
+}
+nav ul li button{
+    margin: 0 10px; 
+    width: 30px;
+    height: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius:50% ;
+    background-color: transparent;
+    color:#999999;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+ }
+nav ul li button:hover{
+    color: rgb(242, 156, 8);
+}
+nav ul li a:hover{
+    color: rgb(242, 156, 8);
+}
+nav ul li a {
+    position: relative;
+}
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    background-color: rgb(242, 156, 8);
+    left: 0;
+    bottom: -19px;
+    transition: 0.5s;
+}
+nav .active{
+    background-color: #fff9e6;
+    color: #ffd141;
+    display: block;
+}
+nav ul li a:hover::before {
+    width: 100%;
+} 
+#banner{
+    background-image: url(../images/banner.png); 
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#banner .row{
+    align-items: center;
+    height: 600px;
+}
+#banner .banner-contains{
+    width: 470px;
+}
+#banner .banner-contains h4{
+    color: #0f2f44;
+    font-size: 50px;
+    font-weight: 400;
+}
+#banner .banner-contains h1{
+    color: #0f2f44;
+    font-size: 80px;
+    font-family: "Abril Fatface", serif; 
+    text-transform: uppercase;
+}
+#banner .banner-contains p{
+    letter-spacing: 10px;
+    margin: 18px 0;
+    font-size:32px ;
+    color:#8484bf ;
+}
+#banner .banner-contains span{
+    font-size: 14px;
+    line-height:24px ;
+     color:#444444 ;             
+}
+#banner .banner-contains .btn-group{
+    display: flex;
+    margin-top: 40px;
+}
+#banner .banner-contains .btn-group a{
+    padding: 28px 35px;
+    background-color: #8484bf;
+    color: #fff;
+    box-shadow: #ccc;
+    border-radius: 10px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+#banner .banner-contains .btn-group a:hover{
+    color: #000000; 
+    transition: 0.5s;  
+}
+#banner .banner-contains .btn-group img{
+    box-shadow: 15px 10px 30px #ccc;
+    border-radius: 50%;
+} 
+#about{
+    padding: 100px 0;
+}
+
+#about .about-contains{
+    width: 570px;
+    
+}
+#about .about-contains h1{
+    font-size: 48px;
+    font-family:"Abril Fatface", serif; 
+    color: var(--primary-color);
+}
+#about .about-contains p{
+    padding: 30px 0;
+    font-size: 16px;
+    line-height: 22px;
+    color:var(--primary-color) ;
+
+}
+#about .about-contains ul{
+    margin-left: 30px;
+}
+#about .about-contains ul li{
+    font-size: 16px;
+    line-height: 44px;
+    color: var(--primary-color);
+}
+#about .img{
+    margin-top: 50px;
+}
+#about  .btn-group{
+    display: flex;
+    margin-top: 40px;
+}
+#about  .btn-group button{
+    padding: 28px 35px;
+   background-color: #ffc712;
+   box-shadow:15px 10px  #ccc ;
+    color: var(--primary-color);
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#about  .btn-group button:hover{
+    color: var(--primary-color);
+   transition: 0.5s ; 
+    background-color: #ffffff;
+    font-weight: 500;  
+}
+#about  .btn-group .second-btn{
+    padding: 28px 35px;
+    background-color:#fff;
+    box-shadow:15px 10px  #ccc ;
+    color: var(--primary-color);
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#about  .btn-group .second-btn:hover{
+    color: var(--primary-color);
+    transition: 0.5s ; 
+    background-color: #9dc2f7;;
+    font-weight: 500;
+}
